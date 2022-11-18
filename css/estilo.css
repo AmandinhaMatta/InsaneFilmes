@@ -3,6 +3,7 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 #header {
@@ -66,4 +67,45 @@ h1 {
     color: white;
     font-size: 80px;
 }
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+.botao {
+    background-color: #A259F7;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 1px #080324;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.botao:hover {
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #f4f8037a;
+}
+#logo img {
+    float: left;
+    height: 70px;
+    width: 120px;
+    position:static;
+    top: 5px;
+    left: 10px;
+}

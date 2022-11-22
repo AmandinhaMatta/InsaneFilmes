@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./css/normalize_.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="https://rawgit.com/aFarkas/html5shiv/gh-pages/dist/html5shiv.min.js"></script>
-    <link rel="shortcut icon" href="img/Popcorn Store (2).jpg" >
+    <link rel="shortcut icon" href="./img/InsaneMovies (4).png" >
     <title>InsaneMovies</title>
 </head>
 <body>
-    <!-- Início do Menu Responsivo -->
+<!-- Início do Menu Responsivo -->
  <header id="header">
-     <a id="logo" href="index.html"><img src="./img/musica.jpg" alt="Logo InsaneMovies"></a>
+     <a id="logo" href="index.html"><img src="./img/InsaneMovies (4).png" alt="Logo InsaneMovies"></a>
      <nav id="nav">
          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >
              <span id="hamburger"></span>
@@ -40,20 +40,62 @@
             </div>
 </header>
     <!--Fim do Menu Responsivo-->
-    <div class="banner">
-        <div class="container-grid conteudo-banner">
-            <div class="texto-banner">
-                <h1>Filmes e séries ilimitados!</h1>
-                <a id="logo" href="index.html" >
-                    <img src="./img/popcorn atulizado.jpg" alt="Logo InsaneMovies">
-                </a>
-              </div>
-       </div>
     <!-- Início do Banner -->
-    <div class="section-banner-home">
-        <div class="container-fluid">
-            <div class="row m-0">
-                <div class="col-12 col-md-6" >
+        <div class="banner">
+            <div class="container-grid conteudo-banner">
+                <div class="texto-banner">
+                    <h1>Filmes e Séries ilimitados!</h1>
+                </div>
+            </div>
+        </div>
+    <!--Fim do Banner-->
+    <!--Inicio Carousel-->
+    <section class="awSlider">
+        <div  class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target=".carousel" data-slide-to="0" class="active"></li>
+            <li data-target=".carousel" data-slide-to="1"></li>
+            <li data-target=".carousel" data-slide-to="2"></li>
+            <li data-target=".carousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg">
+              <div class="carousel-caption">Görsel #1</div>
+            </div>
+            <div class="item">
+              <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-101.jpg">
+              <div class="carousel-caption">Görsel #2</div>
+            </div>
+            <div class="item">
+              <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-1051.jpg">
+              <div class="carousel-caption">Görsel #3</div>
+            </div>
+            <div class="item">
+              <img src="http://www.adobewordpress.com/wp-content/uploads/2013/07/wallpaper-thumb-74.jpg">
+              <div class="carousel-caption">Görsel #4</div>
+            </div>
+          </div>
+      
+          <!-- Controls -->
+          <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Geri</span>
+          </a>
+          <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">İleri</span>
+          </a>
+        </div>
+      </section>
+
     
 </body>
+
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script  type="text/javascript" src="./js/script_menu.js"></script>
+
 </html>

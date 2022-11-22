@@ -14,14 +14,16 @@
     justify-content: space-between;
     background: darkred;
 }
+.logo-head {
+    height: 70px;
+}
 body, ul {
     margin: 0px;
     padding: 0px;
 }
 a {
-    color: black;
-    text-decoration:underline;
-    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-family:unset;
 }
  #header #menu a:hover {
     background: rgb(0, 0, 0, 0.05);
@@ -42,6 +44,84 @@ a {
 #btn-mobile {
     display: none;
 }
+/*Fim Menu*/
+/*Inicio Banner*/
+.banner {
+    background-image: url(../img/cinema\ 3.jpg);
+    height: 590px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-banner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+/*Fim do Banner*/
+/*Inicio Carrossel*/
+  
+  section.awSlider .carousel{
+    display:table;
+    z-index:2;
+    -moz-box-shadow: 0 0 4px #444;
+      -webkit-box-shadow: 0 0 4px #444;
+      box-shadow: 0 0 15px rgba(1,1,1,.5);
+  }
+  
+  section.awSlider{
+    margin:30px auto;
+    padding:30px;
+    position:relative;
+    display:table;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  section.awSlider:hover > img{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity:1;
+  }
+  
+  section.awSlider img{
+     pointer-events: none;
+  }
+  
+  section.awSlider > img{
+    position:absolute;
+    top:30px;
+    z-index:1;
+    transition:all .3s;
+    filter: blur(1.8vw);
+    -webkit-filter: blur(2vw);
+    -moz-filter: blur(2vw); 
+    -o-filter: blur(2vw); 
+    -ms-filter: blur(2vw);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity:.5;
+  }
+
 
 @media (max-width: 600px) {
     #menu {
@@ -124,6 +204,7 @@ a {
         border-radius: 1rem;
         box-shadow: gray 0.5rem 0.5rem 0.3rem;
     }
+    
     /* CSS Contato */
 
     .contato {

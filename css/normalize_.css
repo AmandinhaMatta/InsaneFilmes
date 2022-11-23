@@ -179,7 +179,7 @@ h5,
 h6,
 optgroup,
 strong {
-  font-weight: 500;
+  font-weight: bold;
 }
 .copy-text,
 .copy-text a {
@@ -321,7 +321,9 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0.75em 0 0.25em;
+  margin: 0;
+  margin-top: 30px;
+  background-color: black;
 }
 h2 {
   font-size: 20px;
@@ -393,6 +395,7 @@ ul > li {
   list-style-type: disc;
   margin-bottom: 5px;
   margin-left: 1.1em;
+  margin-top: 5px;
 }
 ul.structural {
   margin: 0;

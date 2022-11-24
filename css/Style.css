@@ -1,6 +1,18 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+    background-color: darkred;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
 }
 a {
     color: white;
@@ -77,37 +89,110 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
-/* css configurando Banner */
 
-.section-banner-home {
-    width: 100%;
-    height: auto;
-    padding: 50px;
-    margin: 30px auto;
-    background-color:#ffc400;
+/* CSS Destaque */
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+/*carousel*/
+#carouselExampleInterval {
+    position: relative;
+    z-index:10 ;
+    gap: 0.5rem;
+    padding-top: 10px;
 }
 
-.section-banner-home img {
-    height: 400px;
-}
-.section-banner-home .texto-banner h1 {
-    font-size: 30px;
-    width: 60%;
-    font-weight: 500;
-    padding-bottom: 20px; /* Margem interjando texto */
-    color: #fff;
+#carouselExampleInterval  img {
+    height:800px;
 }
 
-.section-banner-home .texto-banner p {
-    font-size: 15px;
-    margin-bottom: 20px; /* Margem externa abaixo do texto */
-    color: #fff;
-}
 
-.section-banner-home .texto-banner a {
-    color: black;
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding: 4px 14px;
-    font-size: 15px;
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: darkred;
+        transition: 0.6px;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px); /* Em px é o tamanho da Faixa do Menu */
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: whitesmoke;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 25px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    .embed-container {
+        position: relative;
+        padding-bottom: 0;
+        height: 350px;
+        max-width: 1000px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        border: solid thick #ffc400;
+        border-radius: 1rem;
+        box-shadow: gray 0.5rem 0.5rem 0.3rem;
+    }
 }

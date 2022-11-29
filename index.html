@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/Style.css">
+    <link rel="shortcut icon" href="./img/InsaneMovies (4).png">
+    <title>InsaneMovies</title>
+</head>
+<body>
+    <!-- Aula 27/09/2022 -->
+    <!-- Início do Menu Responsivo -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/InsaneMovies (3).png" alt="Logo InsaneMovies"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="media.html">Lançamentos</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <!-- Fim do Menu Responsivo -->
+    <div class="banner-home">
+        <div class="container-grid conteudo-banner">
+            <div class="texto-banner">
+                <h1 class="h1-banner">InsaneMovies</h1>
+                <div class="linha-amarela"></div>
+                <span class="titulo-senai">os filmes e séries mais insanos</span>
+            </div>
+        </div>
+    </div>
+    
+
+
+            <!-- Início do Carousel Página Principal -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="500">
+                                <img src="./img/it_ab01_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="...">    
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <img src="./img/harry-potter-and-the-deathly-hallows-part-1_5f23_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <img src="./img/greys-anatomy_14e5_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <img src="./img/hotel-transylvania-3-summer-vacation_8246_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <img src="./img/pixels_4c9b_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <img src="./img/avengers-infinity-war_dd0f_1366x768.jpg" 
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                        </div>
+                            <button 
+                                class="carousel-control-prev"
+                                data-bs-target="#carouselExampleInterval"
+                                type="button"
+                                data-bs-slide="prev"
+                                >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span> 
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                data-bs-target="#carouselExampleInterval"
+                                type="button"
+                                data-bs-slide="next"
+                                >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>    
+                            </button>
+                        </div>
+                        <!-- Fim do Carousel da Página Principal -->
+            </div>
+
+    <!-- Fim Banner -->
+    <!--Início Área Destaque-->
+    <div class="destaque">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <!-- Início da tag section com texto de destaque -->
+                <section class="col-12" >
+                    <h2>Lançamentos da Semana</h2>
+                </section>
+                <!-- Fim da tag section com o texto de destaque-->
+                <!-- Início Imagem 1-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="./img/annabelle_82d7_1366x768 (1).jpg" alt="Galeria" width="100%"></a>
+                        <figcaption>Annabelle</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim Imagem 1-->
+                <!-- Início Imagem 2-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="./img/alvin-and-the-chipmunks-the-squeakquel_aa33_1366x768.jpg" alt="Galeria" width="100%"></a>
+                        <figcaption>Alvin e os Esquilos</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim Imagem 2-->
+                <!-- Início Imagem 3-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="./img/avengers-infinity-war_dd0f_1366x768.jpg" alt="Galeria" width="100%"></a>
+                        <figcaption>Avangers: Guerra Infinita</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim Imagem 3-->
+                <!-- Início Imagem 4-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="./img/ghostbusters_ecef_1366x768.jpg" alt="Galeria" width="100%"></a>
+                        <figcaption>Caça-Fantasmas</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim Imagem 4-->
+                <!-- Início Imagem 5-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="musica.html"><img src="./img/me-before-you_d891_1366x768.jpg" alt="Galeria" width="100%"></a>
+                        <figcaption>Como Eu Era Antes De Você</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim Imagem 5-->
+                <!-- Início Saiba Mais-->
+                <div class="col-12">
+                    <a href="#">Saiba Mais!</a>
+                </div>
+                <!-- Fim Saiba Mais-->
+            </div>
+        </div>
+ </div>
+ <!-- Início área novidades -->
+ <div class="novidades">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Início texto novidades-->
+            <div class="col-md-6">
+                <section class="text-body">
+                    <h2>ASSISTA ONDE QUISER!</h2>
+                    <a class="btn-banner" href="#" target="_blank">Saiba Mais</a>
+                </section>
+            </div>
+            <!-- Fim texto novidades-->
+            <!--Início imagem novidades-->
+            <div class="col-md-6">
+                <figure>
+                    <img src="./img/tablet.jpg" class="img-fluid" alt="banner-home">
+                </figure>
+            </div>
+            <!--Fim imagem novidades-->
+        </div>
+    </div>
+ </div>
+        <!--Início galeria-->
+        <div class="galeria d-flex align-itens-center">
+            <div class="container">
+                <div class="row">
+                    <!--Início texto galeria-->
+                    <div class="col-12">
+                        <section class="texto-galeria">
+                            <h2>FILMES E SÉRIES ILIMITADOS!</h2>
+                        </section>
+                    </div>
+                    <!-- fim texto galerias-->
+                    <!-- início imagem 1 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/hulk_2613_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 1 da galeria-->
+                    <!-- início imagem 2 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/pretty-little-liars_cbad_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 2 da galeria-->
+                    <!-- início imagem 3 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/superman-returns_a581_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 3 da galeria-->
+                    <!-- início imagem 4 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/spongebob-squarepants_3e38_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 4 da galeria-->
+                    <!-- início imagem 5 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/me-before-you_d891_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 5 da galeria-->
+                    <!-- início imagem 6 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/teenage-mutant-ninja-turtles-out-of-the-shadows_ffea_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 6 da galeria-->
+                    <!-- início imagem 7 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/despicable-me-3_3d0e_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 7 da galeria-->
+                    <!-- início imagem 8 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/avengers-infinity-war_41dc_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 8 da galeria-->
+                    <!-- início imagem 9 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/rick-and-morty_2cad_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 9 da galeria-->
+                    <!-- início imagem 10 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/teen-wolf_3277_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 10 da galeria-->
+                    <!-- início imagem 11 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/asia-squawk-box_5154_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                    <!-- fim imagem 11 da galeria-->
+                    <!-- início imagem 12 da galeria-->
+                    <div class="gallery col-6 col-md-3">
+                        <img src="./img/fifty-shades-darker_23bd_1366x768.jpg" class="img-fluid" alt="img-galeria">
+                    </div>
+                        <!-- fim imagem 12 da galeria-->
+        
+                    <!-- início footer -->
+                    <footer class="rodape">
+                        <div class="container">
+                            <div class="row m-0">
+                                <!--início da logomarca-->
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="./img/InsaneMovies (3).png" alt="logo-rodape" width="40%">
+                                    </figure>
+                                </div>    
+                                    <!-- fim da logomarca-->
+                                    <!-- início do texto rodape-->
+                                    <div class="col-md-4">
+                                        <div class="info-contato">
+                                            <p>email:</p>
+                                            <p><a href="InsaneMovies@gmail.com">InsaneMovies@gmail.com</a></p><br>
+                                            <p>Endereço:</p>
+                                            <p>Avenida do Prado, 123</p><br>
+                                            <p>Telefone:</p>
+                                            <p>+55 (15) 996575664</p>
+                                        </div>
+                                    </div>
+                                    <!-- Fim do texto -->
+                                    <!-- início das mídias sociais-->
+                                    <div class="col-md-4">
+                                        <figure class="redes-sociais">
+                                            <a href="https://facebook.com"><img src="./img/face.png"></a>
+                                            <a href="https://instagram.com"><img src="./img/insta.png"></a>
+                                            <a href="https://youtube.com"><img src="./img/youtube.png"></a>
+                                        </figure>
+                                        <br>
+                                        <!-- Repetir opções do menu do Site -->
+                                        <a href="index.html">Home</a><br>
+                                        <a href="#">Jogos</a>
+                                        <a href="#">Produres</a>
+                                        <a href="#">Contato</a>
+                                    </div>
+                                    <!-- fim das midias sociais-->
+                                    <!--início dos direitos autorais-->
+                                    <div class="col-12">
+                                        <p class="direitos">Direitos Autorais</p>
+                                    </div>
+                                    <!-- fim dos direitos autorais -->
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- fim texto galeria-->
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script  type="text/javascript" src="./js/script_menu.js"></script>
+
+</html>
